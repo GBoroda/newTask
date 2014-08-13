@@ -14,5 +14,5 @@ public class Squares {
         else corners = (int) (sqrt * 2);
 
         answer = (input * 4) + (corners * 2) + 2;                                       // counting final numbers of squares (+2 for first square who needed 8 matches)
-        System.out.println(answer);
+        System.out.println(answer * 2);
 }}
