@@ -6,7 +6,7 @@ public class Squares {
     public static void main(String[] args) throws IOException {
         int corners, answer;                                                            // numbers of corners (squares who need 6 matches)
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int input = Integer.parseInt(reader.readLine());                                // input data
+        int input = Integer.parseInt(reader.readLine());
         float sqrt = (float) Math.sqrt(input);                                          // counting exponents
         int round = Math.round(sqrt);                                                   // round exponent (needed to count corners)
 
@@ -14,5 +14,5 @@ public class Squares {
         else corners = (int) (sqrt * 2);
 
         answer = (input * 4) + (corners * 2) + 2;                                       // counting final numbers of squares (+2 for first square who needed 8 matches)
-        System.out.println(answer * 2);
+        System.out.println(answer);
 }}
